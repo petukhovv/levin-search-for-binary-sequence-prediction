@@ -1,0 +1,3 @@
+[submodule "lib/continue"]
+	path = lib/continue
+	url = https://github.com/PetukhovVictor/continue
