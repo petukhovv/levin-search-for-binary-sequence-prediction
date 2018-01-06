@@ -1,6 +1,6 @@
 # levin-search-for-binary-sequence-prediction
 
-Use of the Levin (universal) search for binary sequence prediction problem Edit
+Use of the Levin (universal) search for binary sequence prediction problem
 
 ## Example of use
 
