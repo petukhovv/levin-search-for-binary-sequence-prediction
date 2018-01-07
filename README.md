@@ -15,7 +15,7 @@ python3 main.py -p 100 -b 8 -s 0.45 -i 01110001011101110110010101110010011101000
 - **--stopping_criterion (s-)**: stopping criterion (satisfying the probability)
 - **--input (i-)**: input binary sequence to predict
 
-For binary sequence prediction is used [continue](https://github.com/PetukhovVictor/continue) (forked and adapted for Levin search version)
+For binary sequence prediction is used [continue](https://github.com/PetukhovVictor/continue) (forked and adapted version for Levin search and used in this repo as submodule)
 
 ## Output
 
