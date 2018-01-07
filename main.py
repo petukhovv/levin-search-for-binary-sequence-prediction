@@ -1,5 +1,5 @@
 import argparse
-from math import log2
+from math import log
 
 from lib.LevinSearch import LevinSearch
 from lib.ProgramList import ProgramList
@@ -22,7 +22,7 @@ program_list = ProgramList([Program(length, bits_to_predict) for length in range
 
 program, result, time = LevinSearch(lambda result: result >= stopping_criterion).run(input, program_list)
 bits, prob = result
-levin_complexity = program.length + log2(time)
+levin_complexity = program.length + log(time)
 
 print('=================================')
 print('Levin search finished.')

@@ -25,8 +25,8 @@ def run_program(program, input, maxtime):
             delay = 0
         signal.setitimer(signal.ITIMER_REAL, delay, interval)
         signal.signal(signal.SIGALRM, old_hdl)
-    levin_complexity = program.length + math.log2(elapsed)
-    print('OK. Result: %s with probability = %f, program length: %d, time limit: %f of %f,'
+    levin_complexity = program.length + math.log(elapsed)
+    print('OK. Result: %s with probability = %f, program length: %d, time limit: %f of %f, '
           'Levin complexity: %s' %
           (bits, prob, program.length, elapsed, maxtime, levin_complexity))
     return bits, prob
