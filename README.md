@@ -10,7 +10,7 @@ python3 main.py -p 100 -b 8 -s 0.45 -i 01110001011101110110010101110010011101000
 
 ## Program arguments
 
-- **--program_max_length (p-)**: upper bound for program length
+- **--program_max_length (p-)**: upper bound of programs length
 - **--bits_to_predict (b-)**: bits number to predict
 - **--stopping_criterion (s-)**: stopping criterion (satisfying the probability)
 - **--input (i-)**: input binary sequence to predict
@@ -21,7 +21,8 @@ For binary sequence prediction is used [continue](https://github.com/PetukhovVic
 
 Program output is problem solution: predicted sequence for specified input sequence and bits to predict with the shortest program length and the shortest execution time (**the shortest Levin complexity**).
 
-## Example output
+### Example output
+Using input from "Example of use" section.
 
 ```
 FAILED. Timeout error. Program length: 2, time limit: 0.051236 of 0.050000
