@@ -1,6 +1,12 @@
 # levin-search-for-binary-sequence-prediction
 
-Use of the Levin (universal) search for binary sequence prediction problem
+Use of the Levin (universal) search for binary sequence prediction problem.
+
+After cloning repo you must synchronize the git submodule "continue":
+```
+git submodule init
+git submodule update --recursive --remote
+```
 
 ## Example of use
 
