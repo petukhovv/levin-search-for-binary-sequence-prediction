@@ -1,3 +1,10 @@
+"""Program iterator. We need this data structure as Python does not allow to reset an iterator by default.
+
+Notes:
+    Related stack overflow post: https://stackoverflow.com/a/50427587/470433
+"""
+
+
 class ProgramList:
     def __init__(self, programs):
         self.programs = programs
