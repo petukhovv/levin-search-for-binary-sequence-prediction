@@ -15,5 +15,5 @@ class Program:
             stdout=subprocess.PIPE
         )
         out, err = process.communicate()
-        out = out.decode('utf-8').rstrip().split(',')
-        return out[0], float(out[1])
+        bits, probability = out.decode('utf-8').rstrip().split(',')
+        return bits, float(probability)

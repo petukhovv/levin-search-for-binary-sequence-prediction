@@ -1,6 +1,7 @@
 import time
 import signal
-import math
+
+from lib.helpers.levin_complexity import levin_complexity
 
 
 def timeout_handler(signum, frame):
@@ -25,8 +26,9 @@ def run_program(program, input, maxtime):
             delay = 0
         signal.setitimer(signal.ITIMER_REAL, delay, interval)
         signal.signal(signal.SIGALRM, old_hdl)
-    levin_complexity = program.length + math.log(elapsed)
+
+    complexity = levin_complexity(program.length, elapsed)
     print('OK. Result: %s with probability = %f, program length: %d, time limit: %f of %f, '
           'Levin complexity: %s' %
-          (bits, prob, program.length, elapsed, maxtime, levin_complexity))
+          (bits, prob, program.length, elapsed, maxtime, complexity))
     return bits, prob

@@ -1,4 +1,4 @@
-# levin-search-for-binary-sequence-prediction
+# Levin Search for Binary Sequence Prediction
 
 Use of the Levin (universal) search for binary sequence prediction problem.
 
@@ -28,6 +28,7 @@ For binary sequence prediction is used [continue](https://github.com/PetukhovVic
 Program output is problem solution: predicted sequence for specified input sequence and bits to predict with the shortest program length and the shortest execution time (**the shortest Levin complexity**).
 
 ### Example output
+
 Using input from "Example of use" section.
 
 ```
@@ -805,3 +806,7 @@ OK. Result: 01110001 with probability = 0.490130, program length: 15, time limit
 Levin search finished.
 Result: 01110001 with probability = 0.490130 (in time: 0.200000) for program with length = 15, Levin complexity = 12.678072
 ```
+
+## Requirements
+- Linux environment (`signal.setitimer` only available on [unix](https://stackoverflow.com/a/21718247/470433))
+- Python 3
